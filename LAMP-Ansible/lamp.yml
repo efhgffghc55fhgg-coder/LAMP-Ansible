@@ -1,0 +1,9 @@
+---
+- name: Install and Configure LAMP Stack
+  hosts: localhost
+  become: yes
+
+  roles:
+    - apache
+    - mysql
+    - php

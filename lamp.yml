@@ -1,0 +1,9 @@
+---
+- name: Install and Configure LAMP Stack
+  hosts: lamp
+  become: true
+
+  roles:
+    - apache
+    - mysql
+    - php
